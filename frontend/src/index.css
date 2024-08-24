@@ -27,9 +27,9 @@ header {
 body {
   height: 100%;
   margin: 0px;
-  background: -webkit-linear-gradient(top, #00F0F0 60px, #007373 300px, #003333 80%, #001A1A 100%);
+  background: -webkit-linear-gradient(top, #DBD507 60px, #007373 300px, #003333 80%, #001A1A 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00F0F0 60px, #007373 300px, #003333 80%, #001A1A 100%);
+  background: linear-gradient(to bottom, #DBD507 60px, #007373 300px, #003333 80%, #001A1A 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); }
 
@@ -44,7 +44,7 @@ button {
   border-radius: 0.75rem .5rem;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 0px 0px 5px 6px white, 0px 6px 12px 6px #007373, inset 6px -6px 12px -3px #004040;
+  box-shadow: 0px 0px 2px 3px Lightblue, 0px 3px 6px 3px #007373, inset 3px -3px 6px -1.5px #004040;
   font-family: "Righteous", cursive !important; }
 
 .button-container {
@@ -66,8 +66,6 @@ button:hover {
 
 
 .card {
-/*   margin-left: 2%; */
-/*   display: flex; */
   min-width: 320px;
   min-height: 300px;
   margin-bottom: 4rem;
@@ -75,15 +73,13 @@ button:hover {
 /*   position: relative; */
   justify-content: center;
   border-radius: 1.5rem 3rem;
-/*   width: 95%; */
-  height: 100%;
   background: #CCFFE2;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #CCFFE2 0%, #A8FFFF 100%);
+  background: -moz-linear-gradient(top, #868331 0%, #DBD507 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #CCFFE2 0%, #A8FFFF 100%);
+  background: -webkit-linear-gradient(top, #868331 0%, #DBD507 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #CCFFE2 0%, #A8FFFF 100%);
+  background: linear-gradient(to bottom, #868331 0%, #DBD507 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbe5f9', endColorstr='#fbfbf2',GradientType=0 );
   z-index: 0;
@@ -128,12 +124,12 @@ button:hover {
   padding-left: 0.75rem; }
 
 .card ul li {
+  background-color: #DBD407;
 /*   border-radius: 1rem 0.75rem 0.75rem 1rem; */
-  box-shadow: 0px 0px 6px #00F0F0, 0px 0px 4px black;
+  box-shadow: 0px 0px 6px #00F0F0, 0px 0px 4px black, inset 3px 3px 12px grey;
   padding-left: 0.75rem; }
 
 .card ul li a {
-/*   display: block; */
   font-size: 1.25rem;
   color: #CCFFE2;
   text-align: center;
@@ -141,21 +137,24 @@ button:hover {
   padding-left: 1rem;
 }
 
-/*.card ul li a:hover {
-  padding-left: 0.75rem; }*/
-
-/*.card .secondary a:hover {
-  padding-top: 0.1rem;
-  border-radius: 2rem;
-  box-shadow: 0px 0px 6px #00F0F0, inset 1px 1px 5px #00F0F0;
-  padding-bottom: 0.1rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  background-color: #2E0722; }*/
-
 .nav-link {
   border-radius: 1rem .5rem .5rem .5rem !important;
  box-shadow: 0px 0px 18px #00F0F0, 0px 0px 4px #00F0F0, inset 3px 3px 12px black;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+h1 {
+  color: #2A2433 !important;
+  font-family: "Righteous", cursive;
+  font-weight: 200;
+  line-height: 120%;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-shadow: #801363 1.5px 1.5px 3px;
 }
 
 code {
