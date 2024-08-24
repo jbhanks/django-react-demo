@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Django-React example">
+    <meta name="author" content="Author">
+    <title>My Django-React App</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div id="root"></div> <!-- React will render here -->
+    <script src="{% static 'js/bundle.js' %}" defer></script>
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <p>If you see this text, base.html is being rendered correctly.</p>
+</body>
+</html>
+
+
+
